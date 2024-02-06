@@ -1,0 +1,93 @@
+@import url(fonts.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --ui-brand-color: #1faff9;
+    --ui-dark-accent-color: #838383;
+    --ui-dark-shade-color: #000;
+    --ui-light-shade-color: #fff;
+    --ui-light-accent-color: #2fddf5;
+    --ui-link-color: #191919;
+    --bright-button: linear-gradient(90deg, rgba(80,169,255,1) 42%, rgba(153,254,255,1) 74%);
+    --bright-hover-button: linear-gradient(90deg, rgba(95,255,243,1) 42%, rgba(67,103,255,1) 72%);
+    --button-background-color: #191919e0;
+    --ui-link-color-light: #0b77af;
+    --ui-link-hover-color: #191919;
+    --ui-link-hover-color-light: #0b77af;
+    --font-color: #d3ebeb;
+    --background-color: #131010fd;
+    --background-capt: #1310105b;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+h1, h2 {
+    font-family: "Montserrat Bold";
+    color: var(--font-color);
+}
+p, a, h3{
+    color: var(--font-color);
+    text-decoration: none;
+    margin-bottom: 0;
+}
+label{
+    margin-bottom: 0;
+}
+
+.container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.container-background{
+    background-color: var(--background-color);
+}
+
+.button {
+    position: relative;
+    font-family: 'Montserrat Regular';
+    border-radius: 46px;
+    background: var(--bright-button); /* Ваш початковий колір кнопки */
+    padding: 10px 20px;
+    text-align: center;
+    overflow: hidden;
+    transition: background-color 1s ease; /* Плавне змінення колір під час переливання */
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 56px;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.button:hover {
+    background: var(--bright-hover-button); /* Ваш колір при наведенні */
+}
+
+.button:hover::before {
+    opacity: 1;
+}
+li {
+    list-style-type: none;
+    /* Убираем маркеры */
+}
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}

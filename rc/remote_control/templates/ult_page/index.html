@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class = "containera">
+    <div class = "containera__first_background">
+        <!-- HEADER -->
+        <header class="header container">
+            <div class="header__background">
+                <div class="header__wrapper">
+                    <div>{% include 'ult_page/includes/header__content.partial.html' %}</div>
+                </div>
+            </div>
+        </header>
+        <section>{% include 'ult_page/includes/main-capture.partial.html' %}</section>
+    </div>
+    <section>{% include 'ult_page/includes/arguments.partial.html' %}</section>
+    <footer>{% include 'ult_page/includes/footer.partial.html' %}</footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+{% endblock %}

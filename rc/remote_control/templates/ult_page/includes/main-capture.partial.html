@@ -1,0 +1,57 @@
+<div class='main-capture__container container'>
+    <div id="loginForm" class="log-form hidden__logIn">
+        <div class="log-form__container">
+            <div class="log-form__title">
+                <h2>Log In</h2>
+            </div>
+            <div class="log-form__form">
+                <form action="/your-form-handler" method="post" class="log-form__form">
+                    <label for="login"><p>Enter your email:</p></label>
+                    <input placeholder='Login' type="text" id="login" name="name" required minlength="8" maxlength="64" size="10" />
+                    <label for="password_log_in"><p>Enter your password:</p></label>
+                    <input placeholder='Password' type="password" id="password_log_in" name="password" required minlength="8" maxlength="64" size="10" />
+                    <div class="button-form">
+                        <button type="submit" class="button"><p>Log In</p></button>
+                    </div>
+                </form>
+            </div>
+            <div class="sign-up">
+                <h3>Still don't have an account?</h3>
+                <a class="button" id='hideLogInshowSignUp' href="#"><p>Sign Up!</p></a>
+            </div>
+        </div>
+        <!-- Ваша форма авторизації тут -->
+    </div>
+    <div id="signupForm" class="sign-form hidden__sign-up">
+        <div class="sign-form__container">
+            <div class="sign-form__title">
+                <h2>Sign Up</h2>
+            </div>
+            <div class="sign-form__form">
+                <form action="/your-form-handler" method="post" class="sign-form__form">
+                    <label for="email_sign"><p>Enter your email:</p></label>
+                    <input placeholder='Login' type="text" id="email_sign" name="email" required minlength="8" maxlength="64" size="10" />
+                    <label for="name_sign"><p>Enter your name:</p></label>
+                    <input placeholder='Name' type="text" id="name_sign" name="name" required minlength="4" maxlength="64" size="10" />
+                    <label for="password_sign"><p>Enter your password:</p></label>
+                    <input placeholder='Password' type="password" id="password_sign" name="password" required minlength="8" maxlength="64" size="10" />
+                    <label for="password-repeat_sign"><p>Enter your password:</p></label>
+                    <input placeholder='Password' type="password" id="password-repeat_sign" name="password-repeat" required minlength="8" maxlength="64" size="10" />
+                    <div class="button-form">
+                        <button type="submit" class="button"><p>Sign Up</p></button>
+                    </div>
+                </form>
+            </div>
+            <div class="if_log-in sign-up">
+                <h3>Already have an account?</h3>
+                <a class="button" id='hideSignUpshowLogIn' href="#"><p>Log In!</p></a>
+            </div>
+        </div>
+        <!-- Ваша форма авторизації тут -->
+    </div>
+    <h1 class="main-capture__title">Remote Manager</h1>
+    <p class = 'main-capture__capt'>Your personal assistant in remote computer management</p>
+    <div id='SignUpToConnect' class = 'main-capture__nav-con button'>
+        <a href="#">Connect</a>
+    </div>
+</div>

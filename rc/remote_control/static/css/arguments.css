@@ -1,0 +1,88 @@
+.arguments__block{
+    padding: 20px 0 60px 0;
+
+}
+.arguments{
+    padding: 50px 20px 60px 20px;
+}
+.carousel{
+    z-index: 0;
+
+}
+.arguments__title{
+    justify-content: center;
+    text-align: center;
+}
+.arguments__wrapper{
+    justify-content: center;
+    height: 320px;
+    padding-bottom: 100px;
+    max-width: 725px;
+    
+}
+.arguments__args{
+    display: flex;
+    padding-top: 60px;
+    height: 400px;
+}
+.arguments__logo{
+    padding-bottom: 30px;
+}
+.argumnts__carr-img{
+    height: 200px;
+    width: 70%;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0,0,0,1);
+}
+
+.arguments__arg-capt{
+    display: block;
+}
+.carousel-control-prev{
+    margin-left: auto;
+    margin-right: auto;
+}
+.carousel-control-next{
+    margin-right: auto;
+    margin-left: auto;
+}
+.carousel-caption {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+  }
+  
+.carousel-caption p{
+    font-size: 18px; /* встановіть розмір шрифту, який підходить для вас */
+}
+
+@media(min-width: 976px){
+    .arguments__args{
+        height: 520px;
+    }
+    .arguments__wrapper{
+        justify-content: center;
+        height: 400px;
+        padding-bottom: 100px;
+        max-width: 1100px;
+    }
+    .argumnts__carr-img{
+        height: 400px;
+        width: 70%;
+        max-width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(0,0,0,1);
+    }
+    .carousel-indicators{
+        margin-top: 60px;
+    }
+    .arguments__arg-button{
+        padding-top: 65px;
+    }
+}

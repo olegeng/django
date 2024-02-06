@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class = "containera">
+    <div class = "containera__first_background">
+        <!-- HEADER -->
+        <header class="header container">
+            <div class="header__background">
+                <div class="header__wrapper">
+                    <div>{% include 'ult_page/includes/header__content.partial.html' %}</div>
+                </div>
+        </header>
+    </div>
+    <div>{% include 'info_page/includes/information.partial.html' %}</div>
+    <footer>{% include 'ult_page/includes/footer.partial.html' %}</footer>
+{% endblock %}

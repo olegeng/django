@@ -1,0 +1,50 @@
+{% load static %}
+
+<section class="container-background arguments__block">
+  <div class="arguments container">
+    <div class="arguments__title">
+      <h2>If you still have hesitations about us:</h2>
+    </div>
+    <div id="carouselExampleIndicators" class="arguments__wrapper carousel slide mx-auto" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="arguments__args carousel-inner">
+        <div class="arguments__arg carousel-item active">
+          <div class="arguments__logo">
+            <img class="argumnts__carr-img d-block w-100" src="{% static 'img/arg-use-data.png' %}" alt="First slide">
+          </div>
+            <div class="arguments__arg-capt carousel-caption text-center d-md-block">
+              <p>We don't use your personal data and provide your anonymous and safe.</p>
+          </div>
+        </div>
+        <div class="arguments__arg carousel-item">
+          <div class="arguments__logo">
+            <img class="argumnts__carr-img d-block w-100" src="./img/arg-clones.jpg" alt="Second slide">
+          </div>
+          <div class="arguments__arg-capt carousel-caption text-center d-md-block">
+            <p>Make lot's of binds to make your work more efficient</p>
+          </div>
+        </div>
+        <div class="arguments__arg carousel-item">
+          <div class="arguments__logo">
+            <img class="argumnts__carr-img d-block w-100" src="./img/arg-save-time.jpg" alt="Third slide">
+          </div>
+          <div class="arguments__arg-capt carousel-caption text-center d-md-block">
+            <p>Open and manage apps, prepare your device to using from far away</p>
+          </div>
+        </div>
+      </div>
+      <a class="arguments__arg-button carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="arguments__arg-button carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</section>

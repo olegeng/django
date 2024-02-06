@@ -1,0 +1,62 @@
+.inform__cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+.inform__title{
+    text-align: center;
+    padding-bottom: 35px;
+}
+.inform__instruction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inform__instruction-list{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    height: auto;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+.inform__instruction__item{
+    justify-content: center;
+    position: relative;
+    justify-self: center; /* Вирівнює по центру горизонтально всередині гріда */
+    align-self: center; 
+    text-align: center;
+    max-width: 85%;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+  
+.inform__instruction__item:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 702px;
+    transform: translateX(-50%);
+    border-bottom: 2px solid #d3ebeb; /* Колір та стиль підкреслення можна налаштувати за вашим бажанням */
+}
+
+.inform__quest{
+    background-color: var(--background-capt);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding-top: 70px;
+}
+.inform__quest-title{
+    font-family: 'Montserrat Bold', sans-serif;
+    padding-bottom: 25px;
+}
+.inform__anchor{
+    color: var(--ui-light-accent-color);
+}

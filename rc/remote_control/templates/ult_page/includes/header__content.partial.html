@@ -1,0 +1,31 @@
+{% load static %}
+
+<header>
+  <div class = 'header__center'>
+    <div class='header__logo'>
+      <img class='header__logo-img' src="{% static 'img/header_logo.png' %}" alt="Логотип"> <!-- Логотип сайта -->
+    </div>
+    <div class = 'header__title'>
+      <a class = 'header-nav-home' href="{% url 'main' %}"><h2>Assistant</h2></a>
+    </div>
+    <div class = 'header__burg-menu'>
+    <div class="menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+      <div class='header__menu' id="menu"> <!-- Меню -->
+        <ul>
+          <li class = 'header__nav-list header__nav-list-f'><a id='ShowSignUpFromHeader' href="#">Connect</a></li>
+          <li class = 'header__nav-list header__nav-list-info'><a href="{% url 'info' %}">Info</a></li>
+          <li class = 'header__nav-list header__nav-list-contact'><a href="#contacts">Contacts</a></li>
+          <li class = 'header__nav-list header__nav-list-log'><a id="showLoginFormBtn" href="#">Log In</a></li>
+        </ul>
+        <div class="header__nav-list header__sign-up">
+          <p>Still don't have an account?</p>
+          <a class = 'header__nav-list-sign'href="#"><p>Sign up!</p></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
